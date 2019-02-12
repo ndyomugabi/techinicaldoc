@@ -4,127 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>index</title>
-    <style>
-        .container{
-            width: 100%
+    <title>Document</title>
+    <link rel= "stylesheet" href= "./css/style.css">
 
-           
-        }
-        .left{
-            float: left;
-            width: 25%;
-        }
-        .right{
-            float: right;
-            width: 75%;
-        }
-        table, th, td {
-            border: 1px solid black;
-            border-collapse: collapse;
-            padding: 10px
-        }
-        article {
-    margin-left: 10px;
-
-    overflow: hidden;
-}
-    </style>
 </head>
 <body>
-    <div class="container">
-        <div class="left">
-            
-                <table style = "width:100%">
-                        <tr>
-                            <th>JS Documentation</th>
-                        </tr>
-                        <tr><td><a href"#introduction">Introduction</a></td></tr>
-                        <tr><td>What you should alreay know</td></tr>
-                        <tr><td>JavaScript and JavaScript</td></tr>
-                        <tr><td>Hello world</td></tr>
-                        <tr><td>Variables</td></tr>
-                        <tr><td>Declaring variables</td></tr>
-                        <tr><td>variable scope</td></tr>
-                        <tr><td>Global variables</td></tr>
-                        <tr><td>constants</td></tr>
-                        <tr><td>data types</td></tr>
-                        <tr><td>if...else</td></tr>
-                        <tr><td>while statement</td></tr>
-                        <tr><td>function declaration</td></tr>
-                        </table>
-        </div>
-        <div class="right">
+    <nav id= "navbar">
+        <header>Js documentation</header>
+        <ul>
+            <a class="nav-link" href="#introduction" rel="internal"><li> introduction </li></a>
+            <a class="nav-link" href="#what_you_already_kown" rel="internal"><li>what you should already know</li>></a>
+            <a class="nav-link" href="#hello_world" rel="internal"><li>javascript and java</li></a>
+            <a class="nav-link" href="#variables" rel="internal"><li>variables</li></a>
+            <a class="nav-link" href="#declaring_variables" rel="internal"><li>declaring variables</li></a>
+            <a class="nav-link" href="#global_variables" rel="internal"><li>global variables</li></a>
+        </ul>
+        </nav>
 
-            <article id="introduction">
-                <p><B>Introduction</B></p>
-                    <p style="color:rgb(183, 185, 187);">JavaScript is a cross-platform, object-oriented scripting language. 
-                        It is a small and lightweight language. Inside a host environment 
-                        (for example, a web browser), JavaScript can be connected to the 
-                        objects of its environment to provide programmatic control over them.
-                     </p></style>
-                     <P style="color:rgb(183, 185, 187);">JavaScript contains a standard library of objects, such as Array, Date, 
-                         and Math, and a core set of language elements such as operators, control 
-                         structures, and statements. Core JavaScript can be extended for a variety
-                          of purposes by supplementing it with additional objects; for example</P>
+        <main id="main-doc">
+            <section class= "main-section" id="introduction">
+                <header> introduction</header>
+                <article>
+                    <p>JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser)</p>
+                    <p>JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by </p>
+                    <li>client side javascript extends the core language by supplying objects to control a browser and its document object model</li>
+                    <li>Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a server </li>
 
-                          <ul>
-                             <p><li>Client-side JavaScript extends the core language by supplying
-                               objects to control a browser and its Document Object Model (DOM).
-                                For example, client-side extensions allow</li></p>
-                                <li>Server-side JavaScript extends the core language by
-                                     supplying objects relevant to running JavaScript on a server. 
-                                     For example, server-side extensions allow an application to 
-                                     communicate </li>
-                            </ul>
-                            <p><h2>What you should already know</h2></p>
-                            <p style="color:rgb(183, 185, 187);">This guide assumes you have the following basic background:</p>
-                            <ul>
-                               <p><li>A general understanding of the Internet and the World Wide Web (WWW)</li></p>
-                               <p> <li>Good working knowledge of HyperText Markup Language (HTML</li></p>
-                               <p> <li>Some programming experience. If you are new to programming, try one 
-                                   of the tutorials linked on the main page about JavaScript.</li></p>
+                </article> 
 
-                            </ul>
-                            <p> <h2>JavaScript and Java </h2> </p>
-                            <p style="color:rgb(183, 185, 187);"> JavaScript and Java are similar in some ways but fundamentally different in some others. 
-                                The JavaScript language resembles Java but does not have Java's static typing and strong 
-                                type checking. JavaScript follows most Java expression syntax, naming conventions and 
-                                basic control-flow constructs which was the reason why it was renamed from LiveScript to 
-                                JavaScript.</p>
+            </section>
 
-                                <p style="color:rgb(183, 185, 187);"> In contrast to Java's compile-time system of classes built by declarations, JavaScript 
-                                    supports a runtime system based on a small number of data types representing numeric, 
-                                    Boolean, and string values. JavaScript has a prototype-based object model instead of 
-                                    the more common class-based object model. The prototype-based model provides dynamic 
-                                    inheritance; that is, what is inherited can vary for individual objects. JavaScript 
-                                    also supports functions without any special declarative requirements. Functions can be 
-                                    properties of objects, executing as loosely typed methods.</p>
+            <section class= "main-section" id= "what_you_should_already_know">
+                <header>what you should already know</header>
+                <article>
+                    <p>This guide assumes you have the following basic background </p>
+                    <li>general understanding of the internet and world wide web</li>
+                    <li>good working knowledge of html</li>
 
-                                     <p style="color:rgb(183, 185, 187);"> JavaScript is a very free-form language compared to Java. You do not have to declare
-                                          all variables, classes, and methods. You do not have to be concerned with whether 
-                                          methods are public, private, or protected, and you do not have to implement interfaces. 
-                                          Variables, parameters, and function return types are not explicitly typed.</p>
 
-                                          <p><h2>Hello world</h2></p>
-                                          <p style="color:rgb(183, 185, 187);">JavaScript is a very free-form language compared to Java. You do not have to declare
-                                               all variables, classes, and methods. You do not have to be concerned with whether 
-                                               methods are public, private, or protected, and you do not have to implement interfaces.
-                                                Variables, parameters, and function return types are not explicitly typed.</p>
+                </article>
 
-                                                <p>
-                                                    <code>
-                                                        <pre>
-                                                     function greetMe(yourName) { <br><br>
-                                                        alert("Hello " + yourname); <br><br>
-                                                     }
 
-                                                     greetMe("world");</pre>
-                                                    </code>
-                                                </p>
+            </section>
+            <section class ="main-section" id= "javascript_and_java">
+                <header>javascript and java</header>
+                <article>
+                    <p>JavaScript and Java are similar in some ways but fundamentally different in some others.</p>
+                    <p>In contrast to Java's compile-time system of classes built by declarations, JavaScript supports a runtime system</p>
+                    <p>JavaScript is a very free-form language compared to Java. You do not have to declare all variables, classes, and methods.</p>
 
-            </article>
-        </div>
-    </div>
+
+                </article>
+            </section>
+
+            <section class="main-section" id="hello_world">
+
+                <header>hello world</header>
+                <article>
+                        To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:
+                    <code>
+                            function greetMe(yourName) {
+                                alert("Hello " + yourName);
+                              }
+                              greetMe("World");
+                              </code>  
+                    </code>
+                </article>
+            </section>
+        </main>
+
+    </nav>
 </body>
 </html>
