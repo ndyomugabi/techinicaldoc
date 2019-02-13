@@ -17,7 +17,7 @@ html, body{
 header{
     color: black;
     font-size: 25px;
-    margin: 15px;
+    margin: 10px;
     font-size: 1.8em;
     text-align: center;
 
@@ -31,18 +31,27 @@ margin: 0px;
 #navbar li{
     color: grey;
     border: 1px solid;
-    padding: 10px
+    padding: 10px;
+    padding-left: 40px;
+    position: relative;
+    list-style: none;
+    border-bottom-width: 0px;
+    left: -40px;
+    
 
 }
 #navbar ul{
-    height: 70%
+    height: 70%;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 #navbar a{
     color: grey;
     cursor: pointer;
+    text-decoration: none;
 }
 #main-doc{
-    margin-left: 200px;
+    margin-left: 250px;
     padding: 20px;
     position: absolute;
 

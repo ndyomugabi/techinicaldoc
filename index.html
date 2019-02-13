@@ -13,13 +13,18 @@
         <header>Js documentation</header>
         <ul>
             <a class="nav-link" href="#introduction" rel="internal"><li> introduction </li></a>
-            <a class="nav-link" href="#what_you_already_kown" rel="internal"><li>what you should already know</li>></a>
-            <a class="nav-link" href="#hello_world" rel="internal"><li>javascript and java</li></a>
+            <a class="nav-link" href="#what_you_already_know" rel="internal"><li>what you should already know</li></a>
+            <a class="nav-link" href="#hello_world" rel="internal"><li>hello world</li></a>
             <a class="nav-link" href="#variables" rel="internal"><li>variables</li></a>
             <a class="nav-link" href="#declaring_variables" rel="internal"><li>declaring variables</li></a>
             <a class="nav-link" href="#global_variables" rel="internal"><li>global variables</li></a>
+            <a class="nav-link" href="#javascript_and_java" rel="internal"><li>javascript and java</li></a>
+            <a class="nav-link" href="#constants" rel="internal"><li>constants</li></a>
+            <a class="nav-link" href="#data_types" rel="internal"><li>datatypes</li></a>
+            <a class="nav-link" href="#if_else_statement" rel="internal"><li>if...else statement</li></a>
+            <a class="nav-link" href="#while statement" rel="internal"><li>while_statement</li></a>
         </ul>
-        </nav>
+    </nav>
 
         <main id="main-doc">
             <section class= "main-section" id="introduction">
@@ -67,12 +72,69 @@
                                 alert("Hello " + yourName);
                               }
                               greetMe("World");
-                              </code>  
+                              
                     </code>
                 </article>
+
             </section>
+
+            <section class="main-section" id="variables">
+                <header>variables</header>
+                <article>
+                    <p>With the keyword var. For example, <code>var x = 42.</code> This syntax can be used to declare both local and global variables.</p>
+                    <p> With the keyword let. For example,<code> let y = 13.</code> This syntax can be used to declare a block scope local variable.</p>
+                    
+                </article>
+            </section>
+            <section class="main-section" id="variable_scope">
+                <header>variable scope</header>
+                <article>
+                    <p>When you declare a variable outside of any function, it is called a global variable,</p>
+                    <p> JavaScript before ECMAScript 2015 does not have block statement scope; rather, a variable declar</p>
+                    <code> 
+                        if (true){
+                            var x=5;
+                        }
+                        console.log(x);
+
+                    </code>
+
+
+                </article>
+            </section>
+
+            <section class="main-section" id="global_variables">
+                <header>global variables</header>
+                <article>
+                    <p>Global variables are in fact properties of the global object. In web pages the global object is window,</p>
+                    <p>Consequently, you can access global variables declared in one window or frame from another window </p>
+                </article>
+
+            </section>
+            <section class="main-section" id="constants">
+                <header>constants</header>
+                <article>
+                    <p>You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is the same as for a variable identifier: it must start with a letter, underscore or dollar sign and can contain
+                         alphabetic, numeric, or underscore characters.</p>
+                         <code>const PI = 3.14;</code>
+                         <p>The scope rules for constants are the same as those for let block scope variables. If the const keyword is omitted, the identifier is assumed to represent a variable.</p>
+                         <code>
+                             // THIS WILL CAUSE AN ERROR
+                                function f() {};
+                                const f = 5;
+                                // THIS WILL CAUSE AN ERROR ALSO
+                                function f() {
+                                  const g = 5;
+                                  var g;
+                                  //statements
+                                }</code>
+                </article>
+
+
+            </section>
+
         </main>
 
-    </nav>
+    
 </body>
 </html>
