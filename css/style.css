@@ -72,3 +72,25 @@ code{
     background-color: peachpuff
 
 }
+@media only screen and (max-width: 600px) {
+    #navbar ul{
+        height: 70%;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    #navbar{
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 250px;
+        border-right: solid;
+        border-color: black;
+    }
+    #main-doc{
+        margin-left: 250px;
+        padding: 20px;
+        position: absolute;
+    
+    }
+}
